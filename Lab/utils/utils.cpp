@@ -5,7 +5,7 @@
 
 void executionTime(clock_t start, std::string function_name = "NULL") {
 	clock_t end = clock();
-	double seconds = (double)(end - start) / CLOCKS_PER_SEC;
+	double seconds = (double)(end - double(start)) / CLOCKS_PER_SEC;
 	if (function_name == "NULL")
 	{
 		printf("[TIME]%f SECONDS ELAPSED\n", seconds);
